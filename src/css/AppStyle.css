@@ -231,8 +231,7 @@ h6 {
     background: #ffffff21!important;
 }
 .normal {
-    font-weight: bold;
-    font-size: 12px;
+    font-size: medium;
     border-radius: 2px;
     padding: 3px;
     background: transparent!important;
