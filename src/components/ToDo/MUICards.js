@@ -14,7 +14,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
-import { BookmarkAddedOutlined } from '@mui/icons-material';
+import { Bookmark} from '@mui/icons-material';
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -64,7 +64,7 @@ export default function ToDoCard(props) {
       </CardContent>
       <CardActions disableSpacing>
         <IconButton aria-label="add to favorites">
-          <BookmarkAddedOutlined />
+          <Bookmark />
         </IconButton>
         <IconButton aria-label="share">
           <ShareIcon />

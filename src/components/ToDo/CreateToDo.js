@@ -57,9 +57,9 @@ export class CreateToDo extends Component {
             <FontAwesomeIcon icon={faPlus} /> Create New To-Do
           </Button>
 
-          <Button className='btn btn-secondary ' variant="primary" type="submit" onClick={this.ShowToDoList}>
+          {/* <Button className='btn btn-secondary ' variant="primary" type="submit" onClick={this.ShowToDoList}>
             <FontAwesomeIcon icon={faEye} /> Show All List
-          </Button>
+          </Button> */}
 
         </Form>
 
