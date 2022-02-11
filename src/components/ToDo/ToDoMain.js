@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import { Col, Row } from "react-bootstrap";
 import CreateToDO from "./CreateToDo";
 import ToDoList from "./ToDoList";
-export class ToDo extends Component {
+import '../../css/AppStyle.css'
+class ToDoMain extends Component {
   render() {
     return (
       <React.Fragment>
@@ -19,4 +20,4 @@ export class ToDo extends Component {
   }
 }
 
-export default ToDo;
+export default ToDoMain;

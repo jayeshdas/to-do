@@ -1,4 +1,3 @@
-
 .card {
     border: none;
     background-color: #ffffff;
@@ -208,6 +207,9 @@ h6 {
 }
 
 .name{
+    font-weight: bold;
+    color: #01aa78;
+    font-size: large;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
