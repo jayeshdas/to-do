@@ -38,7 +38,7 @@ export default function ToDoCard(props) {
 
     props.data.map(data=>(
 
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345 }} className='m-1'>
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe" src={data.imgurl}>
@@ -53,12 +53,12 @@ export default function ToDoCard(props) {
         title={data.username}
         subheader={data.datetime}
       />
-      <CardMedia
+      {/* <CardMedia
         component="img"
         height="150"
         image="https://media.gettyimages.com/photos/todo-picture-id1168122629?s=2048x2048"
         alt="Paella dish"
-      />
+      /> */}
       <CardContent>
           {data.title}
       </CardContent>

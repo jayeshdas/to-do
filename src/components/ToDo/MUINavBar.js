@@ -79,13 +79,13 @@ const ResponsiveAppBar = () => {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {MenuList.map((page) => (
+              {/* {MenuList.map((page) => (
                 <MenuItem key={page.id} onClick={handleCloseNavMenu}>
                   <Link to={page.url}>
                     <Typography textAlign="center">{page.title}</Typography>
                   </Link>
                 </MenuItem>
-              ))}
+              ))} */}
             </Menu>
           </Box>
           <Typography
@@ -97,7 +97,7 @@ const ResponsiveAppBar = () => {
             TODO
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {MenuList.map((page) => (
+            {/* {MenuList.map((page) => (
               <Link to={page.url}>
                 <Button
                   key={page.id}
@@ -107,7 +107,7 @@ const ResponsiveAppBar = () => {
                   {page.title}
                 </Button>
               </Link>
-            ))}
+            ))} */}
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
