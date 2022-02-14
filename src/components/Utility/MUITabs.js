@@ -4,10 +4,8 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import PhoneMissedIcon from '@mui/icons-material/PhoneMissed';
-import CreateToDo from '../TODO/CreateToDo';
+import CreateToDo from '../ToDo/CreateToDo';
 import { AlarmAdd, Book, Bookmark, StickyNote2 } from '@mui/icons-material';
-import { List } from '@mui/material';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -46,6 +44,7 @@ export default function BasicTabs() {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
+    console.log('handleChange',newValue)
     setValue(newValue);
   };
 
@@ -59,15 +58,19 @@ export default function BasicTabs() {
           <Tab icon={<AlarmAdd />} iconPosition="start" label="Reminder" {...a11yProps(3)} />
         </Tabs>
       </Box>
+
       <TabPanel value={value} index={0}>
       <CreateToDo />
       </TabPanel>
+
       <TabPanel value={value} index={1}>
         Item Two
       </TabPanel>
+
       <TabPanel value={value} index={2}>
         Item Three
       </TabPanel>
+      
       <TabPanel value={value} index={3}>
         Item Four
       </TabPanel>

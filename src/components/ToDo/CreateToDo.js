@@ -36,6 +36,12 @@ export class CreateToDo extends Component {
 
 
   }
+
+  componentDidMount(){
+    this.setState({
+      dataList: JSON.parse(localStorage.getItem('dataList'))
+    })
+  }
   render() {
     return (
       <React.Fragment>
